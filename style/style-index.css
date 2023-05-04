@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html>body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body>main{
+    /*BACKGROUND-GRADIENT*/
+    background: rgb(17,111,90);
+background: -moz-linear-gradient(164deg, rgba(17,111,90,1) 0%, rgba(11,102,75,1) 40%, rgba(13,107,67,1) 75%, rgba(15,111,69,1) 100%);
+background: -webkit-linear-gradient(164deg, rgba(17,111,90,1) 0%, rgba(11,102,75,1) 40%, rgba(13,107,67,1) 75%, rgba(15,111,69,1) 100%);
+background: linear-gradient(164deg, rgba(17,111,90,1) 0%, rgba(11,102,75,1) 40%, rgba(13,107,67,1) 75%, rgba(15,111,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#116f5a",endColorstr="#0f6f45",GradientType=1);
+    /*BACKGROUND-GRADIENT END*/
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body>main>section{
+    border-radius: 50px;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(252, 252, 252);
+    /*BOX-SHADOW*/
+    -webkit-box-shadow: 5px 2px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 2px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 2px 18px 0px rgba(0,0,0,0.75);
+    /*BOX-SHADOW END*/
+}
+div.title{
+    width: 100%;
+}
+#title{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 200%;
+}
+div.title>p{
+    text-align: center;
+}
+a{/*todos <a>*/
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
