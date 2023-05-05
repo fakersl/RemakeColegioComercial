@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <link rel="stylesheet" href="style/style-index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Awesome Icons-->
-    <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
-    <!--Google Fonts link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <title>Colégio Comercial de Caçapava - Painel de Login</title>
+	<link rel="stylesheet" type="text/css" href="./style/style-index.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <main><!--Parte verde-->
-        <section><!--Parte branca-->
-            <div id="main-bg">
-                <div class="title">
-                    <h1 id="title">Colégio Comercial de Caçapava</h1>
-                    <p>Seja bem-vindo(a) de volta!</p>
-                </div>
-                <div class="login-container">
-                    <form action="index.html">
-                        <img src="./imgs/profile_pic.svg" alt="profile pic">
-                        <h2>Olá!</h2>
-                        <div class="input-div">
-                            <div class="i">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="user-id">
-                                <h5>Identificação</h5>
-                                <input type="text" name="" id="user-id-input">
-                            </div>
-                            <div class="user-pw">
-                                <h5>Senha</h5>
-                                <input type="password" name="" id="user-pw-input">
-                            </div>
-                        </div>
-                        <a href="#">Esqueceu sua senha?</a>
-                        <input type="submit" value="Login" class="btn">
-                   
-                    </form>
-                </div><!--login-container-->
 
+	<main id="main">
+        <div class="container">
+            <div class="title-container">
+                <h1>Colégio Comercial de Caçapava</h1>
+            </div><!--title-->
+            <div class="container-content">
+            <div class="img">
+                <img src="./imgs/notebook.svg">
             </div>
-        </section>
+            <div class="login-content">
+                <form action="index.html">
+                    <img src="./imgs/profile_pic.svg">
+                    <h2 class="title">Olá!</h2>
+                       <div class="input-div one">
+                          <div class="i">
+                                  <i class="fas fa-user"></i>
+                          </div>
+                          <div class="div">
+                                  <h5>Identificação</h5>
+                                  <input type="tel" class="input">
+                          </div>
+                       </div>
+                       <div class="input-div pass">
+                          <div class="i"> 
+                               <i class="fas fa-lock"></i>
+                          </div>
+                          <div class="div">
+                               <h5>Senha</h5>
+                               <input type="password" class="input">
+                       </div>
+                    </div>
+                    <a href="#">Esqueceu sua senha?</a>
+                    <input type="submit" class="btn" value="Login">
+                </form><!--form-->
+            </div><!--login-content-->
+            </div>
+        </div><!--container-->
     </main>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
