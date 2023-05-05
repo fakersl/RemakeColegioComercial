@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow: hidden;/*no scrollbar*/
     /*gradient bg*/
     background: rgb(17,111,90);
 background: linear-gradient(164deg, rgba(17,111,90,1) 0%, rgba(11,102,75,1) 40%, rgba(13,107,67,1) 75%, rgba(15,111,69,1) 100%);
@@ -28,9 +28,17 @@ main>div.title{
     padding-top: 15px;
     box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
 }
+.img-logo{
+	position: absolute;
+	top: 50px;
+	
+}
+.img-logo>img{
+	height: 80px;
+}
 .container>.title-container>h1{
     text-align: center;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
 }
 .container-content{
     width: 90vw;
@@ -63,10 +71,6 @@ form{
 }
 .login-content img{
     height: 100px;
-}
-.login-content img:hover{
-    
-    transition: .3s;
 }
 .login-content h2{
 	margin: 15px 0;
@@ -122,6 +126,7 @@ form{
 .input-div:after{
 	left: 50%;
 }
+
 .input-div.focus:before, .input-div.focus:after{
 	width: 50%;
 }
@@ -155,19 +160,24 @@ a{
 	text-decoration: none;
 	color: #999;
 	font-size: 0.9rem;
-	transition: .3s;
 }
 a:hover{
 	color: #0b664b;
+	margin-right: 2px;
+	transition: .3s;
 }
-.btn{
+a:active{
+	color: #199b65;
+	transition: .2s;
+}
+.btn{ /*login btn*/
 	display: block;
 	width: 100%;
 	height: 50px;
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+	background-image: linear-gradient(to right, #199b65, #0b664b, #168658); /*Gradient*/
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
@@ -177,8 +187,20 @@ a:hover{
 	cursor: pointer;
 	transition: .5s;
 }
-.btn:hover{
+.btn:hover{/*login btn animation*/
 	background-position: right;
+}
+@media screend and (max-height: 100vh){
+
+}
+@media screen and (max-height: 690px) {
+	.login-content{
+		max-height: 650px;
+	}
+	h2.title{
+		font-size:2.2rem;
+		margin: 0;
+	}
 }
 @media screen and (max-width: 1335px){
     .title-container>h1{
@@ -189,6 +211,9 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1150px){
+	.container{
+		height: max-content;
+	}
     .title-container>h1{
         font-size: 1.8em;
     }
@@ -200,7 +225,10 @@ a:hover{
         width: 450px;
     }
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1120px){
+	body{
+		overflow-y: auto;
+	}
     .container-content{
 		grid-template-columns: 1fr;
 	}
@@ -221,11 +249,16 @@ a:hover{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
+	.title-container{
+		margin: 4px 0 10px 0;
+	}
     .title-container>h1{
         font-size: 1.2em;
     }
-
+	.img-logo{
+		display: none;
+	}
 	form{
 		width: 290px;
 	}
@@ -234,8 +267,31 @@ a:hover{
         font-size: 2.2rem;
         margin: 8px 0;
 	}
-
 	.img img{
 		width: 380px;
 	}
+	.login-content img{
+		height: 80px;
+	}
+	.login-content h2{
+		margin: 12px 0;
+		font-size: 2.4rem;
+	}
+}
+@media screen and (max-width: 650px){
+	.container>.title-container>h1{
+        font-size: 1.8em;
+    }
+    .container>.title-container{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 590px){
+	
+	.container>.title-container>h1{
+        font-size: 1.8em;
+    }
+    .container>.title-container{
+        margin-top: 15px;
+    }
 }
