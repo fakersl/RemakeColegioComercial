@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*gradient bg*/
+    background: rgb(17, 111, 90);
+    background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%);
+}
+
+main {
+    margin-top: 5vh;
+    width: 100vw;
+    height: max-content;
+}
+
+main>.title {
+    color: #333;
+}
+
+.container {
+    width: 90vw;
+    height: 130%;
+    margin: 0vh 5vw 5vh 5vw;
+    background-color: white;
+    border-radius: 40px;
+    padding-top: 15px;
+    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.main-header-title {
+    display: inline;
+    max-height: 76px;
+}
+
+.main-header {
+    display: block;
+    align-items: center;
+}
+
+.main-header>.ccc-logo-container {
+    display: flex;
+    margin: 15px 0 0 0;
+    justify-content: center;
+}
+
+.main-header #ccc-logo {
+
+    height: 80px;
+}
+
+.main-header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    width: calc(max-content + 16px);
+}
+
+.main-header p {
+    font-weight: lighter;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    width: calc(max-content + 16px);
+}
+
+.container-content {
+    width: 90vw;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+
+.container-left{
+    grid-column-start: 1;
+    min-width: 20px;
+    background-color: red;
+}
+.container-mid{
+    grid-column-start: 2;
+    min-width: 20px;
+    background-color: red;
+}
+.container-right{
+    grid-column-start: 3;
+    min-width: 20px;
+    background-color: red;
+}
