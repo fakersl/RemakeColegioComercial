@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <title>Colégio Comercial de Caçapava - Painel de Login</title>
-    <link rel="stylesheet" type="text/css" href="./style/style-index.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Colégio Comercial de Caçapava - Painel do Aluno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9080a8854.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style/style-index2.css">
 </head>
 
 <body>
@@ -23,16 +24,38 @@
             </div>
             <div class="container-content">
                 <!--Conteúdo real do Site-->
+                <div class="container-top">
+                    <div class="student">
+                        <img id="student-img" src="./imgs/student_pic.svg" alt="Foto de perfil">
+                        <p id="say-hi">Olá, <span id="student-name">[Nome do Aluno]</span>!</p>
+                        <div class="inline-block">
+                            <div class="social-media">
+                                <a href="https://www.instagram.com" target="_blank"><img id="instagram" class="icon" src="./imgs/instagram_icon.svg" alt="instagram"></a>
+                                <a href="https://www.linkedin.com" target="_blank"><img id="linkedin" class="icon"  src="./imgs/linkedin_icon.svg" alt="LinkedIn"></a>
+                                <a href="https://www.whatsapp.com" target="_blank"><img id="whatsapp" class="icon" src="./imgs/whatsapp_icon.svg" alt="Whatsapp"></a>
+                            </div><!--social-media-->
+                        </div><!--inline-block-->
+                        <div class="edit">
+                            <button type="button"><a href="#">EDITAR PERFIL</a></button>
+                        </div>
+                    </div><!--student-->
+                </div><!--container-top-->
                 <div class="container-left">
-                    <div class="img-name">
-                        <img id="student-img" src="./imgs/student_pic.svg" alt="">
+                    <div class="messages">
+                    <h2>Últimos recados</h2>
+                    <div class="msg">
+                        <img id="msg-pic" src="./imgs/msg_pic.svg" alt="Foto do remetente">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed provident ex assumenda quibusdam id beatae nobis? Hic consectetur commodi fugiat optio autem facilis quo, ratione veniam! Ipsum, ut architecto?</p>
                     </div>
-                </div>
-                <div class="container-mid">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed provident ex assumenda quibusdam id beatae nobis? Hic consectetur commodi fugiat optio autem facilis quo, ratione veniam! Ipsum, ut architecto?</p>
-                </div>
+                    </div><!--messages-->
+                </div><!--container-left-->
                 <div class="container-right">
-
+                    <div>
+                        <h2>Colegas de Turma</h2>
+                    </div>
+                    <div>
+                        <h2>Funcionários</h2>
+                    </div>
                 </div>
             </div>
         </div><!--container-->

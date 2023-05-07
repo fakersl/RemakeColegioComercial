@@ -10,7 +10,7 @@ body {
 	overflow-x: hidden;
 	/*gradient bg*/
 	background: rgb(17, 111, 90);
-	background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%);
+	background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%) !important;
 }
 
 main {
@@ -31,6 +31,7 @@ main>div.title {
 	border-radius: 40px;
 	padding-top: 15px;
 	box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+	
 	
 }
 
@@ -64,19 +65,19 @@ div.main-header #ccc-logo {
 	height: 80px;
 }
 
-div.main-header h1 {
-	text-align: center;
-	color: #333;
-	font-size: 30px;
-	width: calc(max-content + 16px);
+.main-header-title>h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    width: calc(max-content + 16px);
 }
 
-div.main-header p {
-	font-weight: lighter;
-	text-align: center;
-	color: #555;
-	font-size: 20px;
-	width: calc(max-content + 16px);
+.main-header-title>p {
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    width: calc(max-content + 16px);
 }
 
 .img {
@@ -212,6 +213,7 @@ a {
 	text-decoration: none;
 	color: #999;
 	font-size: 0.9rem;
+	font-weight: 600;
 }
 
 a:hover {
@@ -233,16 +235,17 @@ a:active {
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
 	/*Gradient*/
+	background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
-	transition: .5s;
+	transition: .5s ease;
+	font-weight: 600;
 }
 
 .btn:hover {

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     overflow-x: hidden;
     /*gradient bg*/
     background: rgb(17, 111, 90);
-    background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%);
+    background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%) !important;
 }
 
 main {
@@ -27,7 +28,7 @@ main>.title {
     width: 90vw;
     height: 130%;
     margin: 0vh 5vw 5vh 5vw;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 40px;
     padding-top: 15px;
     box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
@@ -55,15 +56,15 @@ main>.title {
     height: 80px;
 }
 
-.main-header h1 {
+.main-header-title>h1 {
     text-align: center;
     color: #333;
     font-size: 30px;
     width: calc(max-content + 16px);
 }
 
-.main-header p {
-    font-weight: lighter;
+.main-header-title>p {
+    font-weight: 400;
     text-align: center;
     color: #333;
     font-size: 20px;
@@ -74,24 +75,121 @@ main>.title {
     width: 90vw;
     height: max-content;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    padding: 20px;
+    padding: 40px;
 }
+
+.container-top{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    min-width: 10px;
+    background-color: white;
+	border-radius: 40px;
+	padding: 40px;
+    margin: 0 10px 40px 10px;
+	box-shadow: 5px 5px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.student>#student-img{
+    width: 150px;
+    border-radius: 50%;
+}
+.student{
+    position: relative;
+}
+.student>p#say-hi{
+    display: inline;
+    margin: 2px 0;
+    padding: 0 25px;
+    font-weight: 400;
+    color: #555;
+    font-size: 1.4rem;
+    position: absolute;
+}
+.student>p>span#student-name{
+    color: #333;
+    font-weight: 600;
+}
+.inline-block{
+    display: inline-block;
+    position: absolute;
+}
+.social-media{
+    width: 35px;
+    display: flex;
+    margin: 35px 0 0 25px;
+    cursor: default;
+}
+.icon{
+    justify-content: space-around;
+    transition: .5s;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.edit{
+    margin: 10px 0 0 0;
+    display: flex;
+    max-width: 150px;
+    justify-content: center;
+}
+.edit>button{
+    background-position: right;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+	background-size: 200%;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.edit>button:hover{
+    background-position: left;
+}
+.edit>button>a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: #333;
+    width: max-content;
+    border-bottom: 2px solid #333;
+    margin-bottom: 16px;
+}
+
 
 
 .container-left{
+    grid-row-start: 2;
     grid-column-start: 1;
-    min-width: 20px;
-    background-color: red;
+    min-width: 10px;
+    padding: 0 25px;
 }
-.container-mid{
-    grid-column-start: 2;
-    min-width: 20px;
-    background-color: red;
+.msg{
+    position: relative;
 }
+img#msg-pic{
+    width: 40px;
+    margin: 5px 15px;
+    
+
+}
+.msg>p{
+    display: inline;
+
+}
+
+
 .container-right{
-    grid-column-start: 3;
-    min-width: 20px;
-    background-color: red;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    min-width: 10px;
+    padding: 0 25px;
+    
 }
