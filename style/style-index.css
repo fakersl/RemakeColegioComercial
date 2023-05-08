@@ -307,7 +307,6 @@ a:active {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 800px) {
 	.login-content h2 {
 		font-size: 2.2rem;
@@ -350,7 +349,6 @@ a:active {
 		font-size: 16px;
 	}
 }
-
 @media screen and (max-width: 650px) {
 	form{
 		width: 300px;
