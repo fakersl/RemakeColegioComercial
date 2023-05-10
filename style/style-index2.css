@@ -170,35 +170,6 @@ main>.title {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-.edit {
-    margin: 10px 0 0 0;
-    display: flex;
-    max-width: 150px;
-    justify-content: center;
-}
-
-.edit>button {
-    background-position: right;
-    padding: 14px;
-    border-radius: 25px;
-    border: none;
-    background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
-    background-size: 200%;
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.edit>button:hover {
-    background-position: left;
-}
-
-.edit>button>a {
-    color: rgb(11, 19, 56);
-    text-decoration: none;
-    font-weight: 700;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-
 h2 {
     text-align: center;
     color: #333;
@@ -219,7 +190,7 @@ img#msg-pic {
     margin-right: 5px;
 }
 
-.table img{
+.table img {
     cursor: pointer;
 }
 
@@ -260,32 +231,68 @@ img {
     width: 223px;
 }
 
-.msg{
+.msg {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
 }
-.msg-img{
-    width: 135px;
-}
-.msg-img>img{
+
+.msg-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.msg-img>h4{
+
+.msg-img>img {
+    width: 135px;
+}
+
+.msg-img>h4 {
     grid-column-start: 2;
     grid-column-end: 3;
     width: max-content;
     display: flex;
 }
-.msg-content{
+
+.msg-content {
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
-.dark-mode{
-    background-color: #333;
+.msg-btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
+.msg-btn{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: block;
+    width: max-content;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*Gradient*/
+    background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+    background-size: 200%;
+    transition: .5s ease;
+}
+.msg-btn:hover{
+    background-position: right;
+}
+
 /*Cada linha das tabelas de funcionários e colegas de classe*/
 .line1 {
     grid-row-start: 1;
