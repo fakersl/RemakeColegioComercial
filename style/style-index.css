@@ -31,8 +31,8 @@ main>div.title {
 	border-radius: 40px;
 	padding-top: 15px;
 	box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-	
-	
+
+
 }
 
 .container-content {
@@ -66,18 +66,18 @@ div.main-header #ccc-logo {
 }
 
 .main-header-title>h1 {
-    text-align: center;
-    color: #333;
-    font-size: 30px;
-    width: calc(max-content + 16px);
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	width: calc(max-content + 16px);
 }
 
 .main-header-title>p {
-    font-weight: 400;
-    text-align: center;
-    color: #333;
-    font-size: 20px;
-    width: calc(max-content + 16px);
+	font-weight: 400;
+	text-align: center;
+	color: #333;
+	font-size: 20px;
+	width: calc(max-content + 16px);
 }
 
 .img {
@@ -105,6 +105,7 @@ form {
 	transition: 0.5s ease;
 	padding: 25px;
 }
+
 .login-content img {
 	height: 100px;
 }
@@ -214,12 +215,12 @@ a {
 	color: #999;
 	font-size: 0.9rem;
 	font-weight: 600;
+	transition: .3s;
 }
 
 a:hover {
 	color: #0b664b;
 	margin-right: 2px;
-	transition: .3s;
 }
 
 a:active {
@@ -307,6 +308,7 @@ a:active {
 		display: none;
 	}
 }
+
 @media screen and (max-width: 800px) {
 	.login-content h2 {
 		font-size: 2.2rem;
@@ -333,24 +335,27 @@ a:active {
 	}
 
 	div.main-header #ccc-logo {
-		height: 68px; 
+		height: 68px;
 	}
 
 	div.main-header h1 {
 		text-align: center;
 		font-size: 24px;
 	}
-	h2.title{
+
+	h2.title {
 		font-size: 36px;
 	}
+
 	div.main-header p {
-		font-weight: lighter;
+		font-weight: normal;
 		text-align: center;
 		font-size: 16px;
 	}
 }
+
 @media screen and (max-width: 650px) {
-	form{
+	form {
 		width: 300px;
 	}
 }

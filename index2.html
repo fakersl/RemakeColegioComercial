@@ -3,13 +3,13 @@
 
 <head>
     <title>Colégio Comercial de Caçapava - Painel do Aluno</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/d9080a8854.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style/style-index2.css">
 </head>
-
 <body>
     <main id="main">
         <div class="container">
@@ -24,41 +24,127 @@
             </div>
             <div class="container-content">
                 <!--Conteúdo real do Site-->
-                <div class="container-top">
-                    <div class="student">
-                        <img id="student-img" src="./imgs/student_pic.svg" alt="Foto de perfil">
-                        <p id="say-hi">Olá, <span id="student-name">[Nome do Aluno]</span>!</p>
-                        <div class="inline-block">
-                            <div class="social-media">
-                                <a href="https://www.instagram.com" target="_blank"><img id="instagram" class="icon" src="./imgs/instagram_icon.svg" alt="instagram"></a>
-                                <a href="https://www.linkedin.com" target="_blank"><img id="linkedin" class="icon"  src="./imgs/linkedin_icon.svg" alt="LinkedIn"></a>
-                                <a href="https://www.whatsapp.com" target="_blank"><img id="whatsapp" class="icon" src="./imgs/whatsapp_icon.svg" alt="Whatsapp"></a>
-                            </div><!--social-media-->
-                        </div><!--inline-block-->
-                        <div class="edit">
-                            <button type="button"><a href="#">EDITAR PERFIL</a></button>
-                        </div>
-                    </div><!--student-->
-                </div><!--container-top-->
-                <div class="container-left">
-                    <div class="messages">
-                    <h2>Últimos recados</h2>
-                    <div class="msg">
-                        <img id="msg-pic" src="./imgs/msg_pic.svg" alt="Foto do remetente">
-                        <h4>Nome remetente</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed provident ex assumenda quibusdam id beatae nobis? Hic consectetur commodi fugiat optio autem facilis quo, ratione veniam! Ipsum, ut architecto?</p>
+                <div class="student">
+                    <img id="student-img" src="./imgs/student_pic.svg" alt="Foto de perfil">
+                    <h3>Nome do Aluno</h3>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com" target="_blank"><img id="instagram" class="icon"
+                                src="./imgs/instagram_icon.svg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img id="linkedin" class="icon"
+                                src="./imgs/linkedin_icon.svg" alt="LinkedIn"></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><img id="whatsapp" class="icon"
+                                src="./imgs/whatsapp_icon.svg" alt="Whatsapp"></a>
+                    </div><!--social-media-->
+                    <div class="bio">
+                        <h4>Sua bio</h4>
+                        <p>&nbsp;Aqui você fala mais sobre você para seus colegas e professores</p>
+                    </div><!--bio-->
+                    <div class="my-account">
+                        <button type="submit"><a href="#">Editar Perfil</a></button>
                     </div>
-                    </div><!--messages-->
-                </div><!--container-left-->
-                <div class="container-right">
-                    <div>
-                        <h2>Colegas de Turma</h2>
-                    </div>
-                    <div>
-                        <h2>Funcionários</h2>
+                </div><!--student-->
+                <div class="msg-container">
+                    <div class="msg-title">
+                        <h2>Recados recebidos</h2>
+                    </div><!--msg-title-->
+                    <div class="msg-content">
+                        
                     </div>
                 </div>
-            </div>
+                <div class="employees-container">
+                    <div class="employees-title">
+                        <h2>Funcionários</h2>
+                    </div><!--employees-container-->
+                    <div class="scroll">
+                        <div class="table">
+                            <div class="line1">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line1-->
+                            <div class="line2">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line2-->
+                            <div class="line3">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line3-->
+                            <div class="line4">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line4-->
+                            <div class="line5">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line5-->
+                        </div><!--table-->
+                    </div><!--scroll-->
+                </div><!--employees-container-->
+                <div class="students-container">
+                    <div class="students-title">
+                        <h2>Colegas de classe</h2>
+                    </div><!--students-container-->
+                    <div class="scroll">
+                        <div class="table">
+                            <div class="line1">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line1-->
+                            <div class="line2">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line2-->
+                            <div class="line3">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line3-->
+                            <div class="line4">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line4-->
+                            <div class="line5">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line5-->
+                            <div class="line6">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line6-->
+                            <div class="line7">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line7-->
+                            <div class="line8">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <img src="./imgs/profile_pic.svg" alt="employee">
+                            </div><!--line8-->
+                        </div><!--table-->
+                    </div><!--scroll-->
+                </div><!--students-container-->
+            </div><!--container-content-->
         </div><!--container-->
     </main>
     <script type="text/javascript" src="./js/main.js"></script>
