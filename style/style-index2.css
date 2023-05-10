@@ -127,7 +127,7 @@ main>.title {
     justify-content: space-around;
     transition: .5s;
     height: 24px;
-    margin-right: 5px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .edit{
@@ -172,13 +172,13 @@ h2{
     padding: 0 25px;
 }
 .msg{
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
 }
 img#msg-pic{
     width: 40px;
     margin: 5px 15px;
-    
-
 }
 .msg>p{
     display: inline;
