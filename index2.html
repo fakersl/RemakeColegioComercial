@@ -10,9 +10,35 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style/style-index2.css">
 </head>
+<style>
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    body.dark-mode {
+        background-color: black;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button.dark-mode {
+        background-color: black;
+        color: white;
+        border: 5px solid red;
+    }
+</style>
 <body>
     <main id="main">
-        <div class="container">
+        <div class="container-main">
             <div class="main-header">
                 <div class="main-header-title">
                     <h1>Colégio Comercial de Caçapava</h1>
@@ -48,9 +74,27 @@
                         <h2>Recados recebidos</h2>
                     </div><!--msg-title-->
                     <div class="msg-content">
+                        <div class="msg-example01">
+                            <div class="msg">
+                                <div class="msg-img">
+                                    <img src="./imgs/profile_pic.svg" alt="Remetente">
+                                    <h4>Remetente</h4>
+                                </div><!--msg-img-->
+                                <div class="msg-content">
+
+                                </div>
+                            </div><!--msg-example01-->
+                        </div><!--msg-->
+                    </div><!--msg-content-->
+                </div><!--msg-container-->
+                <div class="files-container">
+                    <div class="files-title">
+                        <h2>Arquivos</h2>
+                    </div><!--files-title-->
+                    <div class="files-content">
                         
-                    </div>
-                </div>
+                    </div><!--files-content-->
+                </div><!--files-container-->
                 <div class="employees-container">
                     <div class="employees-title">
                         <h2>Funcionários</h2>
@@ -95,51 +139,51 @@
                     <div class="scroll">
                         <div class="table">
                             <div class="line1">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line1-->
                             <div class="line2">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line2-->
                             <div class="line3">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line3-->
                             <div class="line4">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line4-->
                             <div class="line5">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line5-->
                             <div class="line6">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line6-->
                             <div class="line7">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <img src="./imgs/profile_pic.svg" alt="Aluno">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line7-->
                             <div class="line8">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
-                                <img src="./imgs/profile_pic.svg" alt="employee">
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
+                                <a href="#"><img src="./imgs/profile_pic.svg" alt="Aluno"></a>
                             </div><!--line8-->
                         </div><!--table-->
                     </div><!--scroll-->
