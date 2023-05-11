@@ -5,6 +5,10 @@
     outline: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow-y: auto;
@@ -88,7 +92,7 @@ main>.title {
     min-width: max-content;
     width: 250px;
     box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    padding:  30px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     border-radius: 25px;
     margin: 0 0 40px 0;
     max-height: max-content;
@@ -171,8 +175,11 @@ main>.title {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-.people{
-    display: block;
+.people {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -213,13 +220,14 @@ img#msg-pic {
     justify-content: center;
 }
 
-.msg-container{
+.msg-container {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.files-container{
+
+.files-container {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -235,6 +243,7 @@ img#msg-pic {
     grid-column-start: 1;
     grid-column-end: 2;
     display: block;
+    margin: 0 auto;
 }
 
 .students-container {
@@ -244,6 +253,7 @@ img#msg-pic {
     grid-column-end: 2;
     margin-top: 40px;
     display: block;
+    margin: 40px auto 40px auto;
 }
 
 img {
@@ -329,6 +339,35 @@ img {
     border: 1px solid #555;
     border-radius: 25px;
     margin-bottom: 40px;
+}
+
+.files-example {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.files-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 25px 0 0 0;
+}
+
+#sender, #date{
+    display: block;
+}
+.sender-date {
+    display: inline-block;
+    margin: auto 0 auto 20px;
+}
+
+.file-title {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
 }
 
 /*Cada linha das tabelas de funcionários e colegas de classe*/
