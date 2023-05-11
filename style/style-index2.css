@@ -77,7 +77,7 @@ main>.title {
     padding: 40px;
     display: grid;
     grid-template-columns: 280px 1fr 1fr;
-    grid-gap: 10px 40px;
+    grid-gap: 0 40px;
 }
 
 .student {
@@ -88,9 +88,12 @@ main>.title {
     min-width: max-content;
     width: 250px;
     box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
-    padding: 20px;
+    padding:  30px 20px 20px 20px;
     border-radius: 25px;
     margin: 0 0 40px 0;
+    max-height: max-content;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .student>#student-img {
@@ -168,6 +171,14 @@ main>.title {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+.people{
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
 h2 {
     text-align: center;
     color: #333;
@@ -202,6 +213,19 @@ img#msg-pic {
     justify-content: center;
 }
 
+.msg-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.files-container{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 .files-container>.files-title {
     display: flex;
     justify-content: center;
@@ -214,6 +238,8 @@ img#msg-pic {
 }
 
 .students-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 40px;
@@ -298,16 +324,11 @@ img {
     background-position: right;
 }
 
-.msg-example01 {
+.msg-example {
     padding: 30px;
     border: 1px solid #555;
     border-radius: 25px;
-}
-
-.msg-example02 {
-    padding: 30px;
-    border: 1px solid #555;
-    border-radius: 25px;
+    margin-bottom: 40px;
 }
 
 /*Cada linha das tabelas de funcionários e colegas de classe*/
