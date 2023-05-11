@@ -91,8 +91,6 @@ main>.title {
     padding: 20px;
     border-radius: 25px;
     margin: 0 0 40px 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 
 .student>#student-img {
@@ -212,12 +210,14 @@ img#msg-pic {
 .employees-container {
     grid-column-start: 1;
     grid-column-end: 2;
+    display: block;
 }
 
 .students-container {
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 40px;
+    display: block;
 }
 
 img {
@@ -261,8 +261,10 @@ img {
 .msg-content {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: 25px 0 0 0;
 }
-.msg-btns{
+
+.msg-btns {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -271,14 +273,16 @@ img {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin: 20px 0 0 0;
 }
-.msg-btn{
+
+.msg-btn {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     display: block;
     width: max-content;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -289,8 +293,21 @@ img {
     background-size: 200%;
     transition: .5s ease;
 }
-.msg-btn:hover{
+
+.msg-btn:hover {
     background-position: right;
+}
+
+.msg-example01 {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 25px;
+}
+
+.msg-example02 {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 25px;
 }
 
 /*Cada linha das tabelas de funcionários e colegas de classe*/
